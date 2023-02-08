@@ -10,8 +10,8 @@ function generate(){
     const choice = document.getElementById("choice");
     const choiceValue = choice.value;
     let output = " ";
-    console.log(choiceValue);
-    console.log(input);
+    // console.log(choiceValue);
+    // console.log(input);
     
     if (choiceValue === "0"){
         output = input.charAt(0).toUpperCase() + input.substring(1).toLowerCase();
@@ -43,14 +43,22 @@ function generate(){
         output = "*".repeat(input.length);
     } else if (choiceValue === "6"){
         output = input.replace(input.charAt(2), input.charAt(2).toUpperCase());
-    } else if 
+
+    } else if (choiceValue === "7"){
+        let str1 = input.indexOf("-");
+        let str2 = input.charAt(str1 + 1).toUpperCase();
+        console.log(typeof str1);
+        console.log(typeof str2);
+        output = input.replace(input.charAt(str1 + 1), str2);
+        console.log(output);
+    }
 
 
-    console.log(output);
+    // console.log(output);
     document.querySelector("input#output").value = output;
 }
 
 getInput();
 
-// 8th. uncludes " " and "-".
-// inputArray = input.slip(" ")
+// 8th. includes " " and "-".
+// inputArray = input.split(" ")
