@@ -41,6 +41,8 @@ function generate(){
         // output = `This file is a ${input.substring(input.lastIndexOf(".")+1)}`
     } else if (choiceValue === "5"){
         output = "*".repeat(input.length);
+    } else if (choiceValue === "6"){
+        output = input.replace(input.charAt(2), input.charAt(2).toUpperCase());
     } else if 
 
 
