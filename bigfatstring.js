@@ -18,7 +18,9 @@ function generate(){
     } else if (choiceValue === "1"){
         output = input.substring(0, input.indexOf(" "));
     } else if (choiceValue === "2"){
-        
+        output = input.substring(0, input.indexOf(" ")).length;
+    } else if (choiceValue === "3"){
+        output = input.
     }
     console.log(output);
     document.querySelector("input#output").value = output;
