@@ -20,8 +20,8 @@ function generate(){
     } else if (choiceValue === "2"){
         output = input.substring(0, input.indexOf(" ")).length;
     } else if (choiceValue === "3"){
-        output = input.
-    }
+        output = `${input.indexOf(" ")+1} , ${input.lastIndexOf(" ")} , ${input.substring(input.indexOf(" ")+1 , input.lastIndexOf(" "))}`;
+    } else if
     console.log(output);
     document.querySelector("input#output").value = output;
 }
